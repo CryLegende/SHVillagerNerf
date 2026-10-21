@@ -1,0 +1,49 @@
+# SHVillagerNerf Configuration
+
+# Empêche les villageois zombies d'être soignés (transformés en villageois normaux).
+# Cela désactive l'utilisation de la pomme d'or sur eux et l'événement de transformation.
+preventZombieVillagerCuring: true
+
+# "Lobotomise" tous les villageois. Ils n'auront plus de pathfinding ni d'IA (ne bougeront plus, ne feront plus rien).
+# Cela affecte les villageois existants au chargement et les nouveaux.
+lobotomizeVillagers: true
+
+# Désactive le menu de commerce des villageois.
+# Un clic droit sur un villageois ne fera rien à part jouer un son de mécontentement.
+disableVillagerTrading: true
+
+# --- Options supplémentaires ---
+
+# Empêche les villageois de se reproduire.
+disableVillagerBreeding: true
+
+# Empêche les villageois de ramasser des objets (par exemple, le pain jeté par les joueurs).
+preventVillagerItemPickup: true
+
+# Rend les villageois complètement silencieux (pas de "hmmm", "non", etc.).
+makeVillagersSilent: false
+
+# Empêche les villageois de changer de profession ou d'acquérir une profession.
+# Utile si vous voulez des villageois "vierges" ou pour éviter les changements accidentels.
+preventProfessionChange: true
+
+# Empêche les villageois de restocker leurs échanges ou d'acquérir de nouveaux échanges en montant de niveau.
+# Note: Cela n'affecte pas les échanges initiaux lors de leur première apparition/profession.
+preventTradeRefresh: true
+
+# Rend les villageois invulnérables à tous les types de dégâts.
+makeVillagersInvulnerable: false
+
+# --- Autres options suggérées ---
+
+# Empêche les villageois d'ouvrir les portes.
+preventVillagerDoorOpening: false
+
+# Empêche les golems de fer d'être spawnés par les villageois (par exemple, en cas de panique ou de rassemblement).
+preventGolemSpawningByVillagers: true
+
+# --- Messages ---
+# Message affiché au joueur lorsqu'il tente d'interagir avec un villageois dont le commerce est désactivé.
+# Laissez vide pour ne pas envoyer de message (seul le son sera joué).
+# Vous pouvez utiliser des codes couleurs avec '&'.
+disabledTradeMessage: "&7&l« &c&lSH &8&l» &7&cLe commerce avec les &cvillageois est &cdésactivé"
