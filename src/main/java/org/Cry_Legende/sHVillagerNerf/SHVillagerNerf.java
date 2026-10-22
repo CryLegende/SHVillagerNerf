@@ -9,6 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Villager;
+import org.bukkit.entity.WanderingTrader;
 import org.bukkit.entity.ZombieVillager;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -128,8 +129,8 @@ public class SHVillagerNerf extends JavaPlugin implements Listener {
             }
         }
 
-        // Désactive le commerce
-        if (disableVillagerTrading && event.getRightClicked() instanceof Villager) {
+        // Désactive le commerce (villageois et marchand ambulant)
+        if (disableVillagerTrading && (event.getRightClicked() instanceof Villager || event.getRightClicked() instanceof WanderingTrader)) {
             event.setCancelled(true);
             event.getPlayer().playSound(event.getRightClicked().getLocation(), Sound.ENTITY_VILLAGER_NO, 1.0f, 1.0f);
             if (disabledTradeMessage != null && !disabledTradeMessage.isEmpty()) {

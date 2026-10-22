@@ -8,8 +8,8 @@ preventZombieVillagerCuring: true
 # Cela affecte les villageois existants au chargement et les nouveaux.
 lobotomizeVillagers: true
 
-# Désactive le menu de commerce des villageois.
-# Un clic droit sur un villageois ne fera rien à part jouer un son de mécontentement.
+# Désactive le menu de commerce des villageois et du marchand ambulant.
+# Un clic droit sur l'un d'eux ne fera rien à part jouer un son de mécontentement.
 disableVillagerTrading: true
 
 # --- Options supplémentaires ---
